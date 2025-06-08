@@ -1,0 +1,62 @@
+🧠 PCA Challenge #1: Unscaled Features in Real-World Wellness Data
+📌 Context – You're the Analyst
+You’ve recently joined a health-tech startup as a Data Analyst Intern. The company builds personalized wellness plans by analyzing lifestyle metrics from fitness bands, diet apps, and health surveys. Your role includes discovering patterns in high-dimensional data and simplifying it for use in clustering, visualization, or prediction.
+
+Your manager drops a task in your inbox:
+
+📄 Problem Statement
+“Hey Ritik, we’re trying to compress user wellness data into a few principal components to uncover hidden patterns in our customer base. Think of this like building compact 'wellness profiles'. I've pulled some raw lifestyle and health data — can you run PCA on it and give me a 2D projection we can later use for clustering?”
+
+“Just a heads-up — it’s raw data from different trackers and forms. See what insights you can get and if anything seems off, fix it.”
+
+🧾 Dataset Overview
+You receive the following dataset with 200 customers. Each row represents a single individual, and the columns include metrics from fitness trackers and self-reported surveys:
+
+Feature	Description
+age	Age of the individual (18–80 years)
+resting_heart_rate	Heart rate in beats per minute
+cholesterol_mg_dl	Cholesterol level in mg/dL
+weight_kg	Body weight in kilograms
+height_cm	Height in centimeters
+daily_steps	Number of steps taken per day
+water_intake_liters	Average daily water intake in liters
+alcohol_units_weekly	Alcohol consumption (units per week)
+sleep_hours	Average sleep per night (in hours)
+smoking_frequency	Average cigarettes per day (0 to 30 scale)
+
+📁 Download the dataset:
+customer_wellness_data.csv
+
+🎯 Your Tasks
+Run PCA on the raw dataset as-is.
+
+Generate the explained variance ratio plot.
+
+Inspect the first few principal components.
+
+Observe and answer:
+
+Are the results meaningful?
+
+Do certain features dominate the principal components?
+
+Fix the issue (spoiler: the data isn’t scaled, so PCA is biased toward high-variance features like daily_steps and height_cm).
+
+Scale the dataset appropriately.
+
+Rerun PCA and interpret the corrected output.
+
+(Optional) Visualize the data in the 2D principal component space. Do any natural clusters emerge?
+
+🕵️ Hidden Insight
+This challenge is designed to expose a common real-world mistake: applying PCA directly to unscaled, differently-measured features. This is your opportunity to spot, justify, and resolve a foundational data preprocessing flaw — a key skill for any analyst.
+
+✅ Deliverables
+Summary of your observations pre- and post-scaling.
+
+Scree plot and/or PCA scatter plot.
+
+Interpretation of the first 2 components.
+
+Clean, documented code in your GitHub notebook.
+
