@@ -1,0 +1,68 @@
+📊 PCA Challenge #2: Predicting Employee Productivity from Behavioral Metrics
+📌 Context – You're the Analyst
+You recently joined a fast-growing tech company as a People Analytics Analyst. Your role involves analyzing complex behavioral data from employees to improve productivity and wellbeing across teams.
+
+Your manager sends you a message:
+
+📄 Problem Statement
+"Hey Ritik, we’ve collected lots of behavioral data on employees — things like focus time, communication activity, breaks, physical activity, and sleep quality. We want to understand the underlying patterns and use them to predict overall productivity scores.
+
+Your task is to:
+
+Use PCA to reduce dimensionality and uncover latent behavioral factors.
+
+Build a regression model to predict productivity_score using the PCA components.
+
+Compare this with a regression model using the original features to see if dimensionality reduction helps.
+
+The data has multiple correlated features and some noise, so careful preprocessing and interpretation are key. Deliver insights we can share with management."
+
+🧾 Dataset Overview
+You receive the dataset for 50 employees with the following columns:
+
+Feature	Description
+focus_duration_min	Minutes spent in focused work sessions daily
+context_switches_per_hour	Number of task/context switches per working hour
+screen_time_hours	Total daily screen time (hours)
+breaks_taken_per_day	Number of breaks taken during the workday
+physical_activity_minutes	Minutes spent on physical activity daily
+sleep_quality_score	Self-reported sleep quality (1–10 scale)
+meetings_attended_per_week	Number of meetings attended weekly
+slack_messages_sent	Number of Slack messages sent daily
+emails_sent_per_day	Number of emails sent daily
+productivity_score	Manager-assigned productivity score (0–100)
+
+📁 Download the dataset
+employee_behavior_productivity.csv
+
+🎯 Your Tasks
+Perform exploratory data analysis to understand feature distributions and correlations.
+
+Apply PCA on the behavioral features (exclude Employee_ID and productivity_score).
+
+Examine the explained variance ratio and decide how many components to keep.
+
+Interpret the principal components by examining feature loadings.
+
+Build a regression model using the principal components to predict productivity_score.
+
+Build a baseline regression model using the original features for comparison.
+
+Evaluate model performances (R², RMSE) and discuss the impact of PCA.
+
+Provide insights on which behavioral factors are most associated with productivity.
+
+🕵️ Hidden Insight
+This challenge mimics real-world scenarios where behavioral metrics are noisy, correlated, and measured on different scales. PCA helps reveal latent dimensions simplifying analysis, but interpreting components and model results requires care. Combining dimensionality reduction with prediction tests your ability to handle complex data workflows end-to-end.
+
+✅ Deliverables
+Clean, documented notebook or script with analysis, PCA, and regression steps.
+
+Scree plot of explained variance ratio.
+
+Tables of principal component loadings and regression coefficients.
+
+Model performance metrics and comparison discussion.
+
+A summary report of actionable insights for management.
+
