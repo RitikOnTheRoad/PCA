@@ -1,0 +1,85 @@
+🧠 PCA Challenge #3: Untangling Multicollinearity in Marketing Channel Spend
+📌 Context – You're the Analyst
+You're working as a Marketing Data Analyst at a consumer tech company that runs large-scale campaigns across multiple channels like YouTube, Facebook, email, and search ads. However, your manager suspects that some channels are too similar in behavior, which might be hurting campaign optimization and budget decisions.
+
+📄 Problem Statement
+“Hey Ritik, we’ve been running marketing campaigns on various channels, but when we try to analyze what’s driving sales, our regression models are unstable — we’re likely dealing with multicollinearity. I need you to use PCA to break down the spending patterns into independent drivers and then predict total conversions.
+
+The goal is to simplify the input space and make the model more interpretable and stable. Compare regression results with and without PCA. If PCA helps, we might use the compressed components for further optimization and clustering.”
+
+🧾 Dataset Overview
+You receive data for 300 recent campaigns, with the following variables:
+
+Feature	Description
+youtube_spend	Budget spent on YouTube ads (in USD)
+facebook_spend	Budget spent on Facebook ads (in USD)
+instagram_spend	Budget spent on Instagram ads (in USD)
+tiktok_spend	Budget spent on TikTok ads (in USD)
+search_spend	Spend on search-based ads (Google/Bing)
+display_spend	Budget on display/banner ads
+email_spend	Budget spent on email campaigns
+influencer_spend	Spend on influencers/content creators
+total_conversions	Total user conversions (target variable)
+
+📁 Download dataset: multicollinear_pca_dataset.csv
+
+🎯 Your Tasks
+EDA:
+
+Explore feature distributions and check for multicollinearity.
+
+Use pairplots, correlation matrix, and VIF scores.
+
+Apply PCA:
+
+Standardize features before PCA.
+
+Analyze the explained variance ratio to determine how many components to retain.
+
+Examine principal component loadings for interpretation.
+
+Regression Models:
+
+Model 1: Linear regression using original features.
+
+Model 2: Linear regression using top PCA components.
+
+Evaluate & Compare:
+
+Report R², Adjusted R², and RMSE for both models.
+
+Discuss model stability and interpretability.
+
+Deliver Business Insights:
+
+Which components drive conversions the most?
+
+Is PCA simplifying analysis without major loss in accuracy?
+
+Can the marketing team use these insights to better allocate budgets?
+
+🕵️ Hidden Insight
+This challenge simulates a common real-world scenario: multicollinear budget variables confuse regression models, making it hard to extract actionable insights. PCA helps reveal latent patterns in marketing behavior (like brand-focused vs. direct-response channels), while improving model interpretability and performance.
+
+✅ Deliverables
+📓 Clean Jupyter notebook with:
+
+Exploratory data analysis
+
+PCA pipeline
+
+Regression models
+
+Performance evaluation
+
+Feature interpretation
+
+📈 Scree plot of variance explained
+
+📊 Tables of:
+
+Component loadings
+
+Regression coefficients
+
+🧾 Summary report with business insights and PCA justification
