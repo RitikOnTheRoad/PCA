@@ -61,7 +61,7 @@ This folder (coming soon) will contain a full **real-world PCA use case** built 
 ## Challenges
 - Challenge 1: Unscaled Features
 - Challenge 2: Low correlation → PCA doesn't reduce much
-- Challenge 3: Outliers dominate PC1
+- Challenge 3: High correlation → PCA does good.
 - Challenge 4: Highly redundant features
 - Challenge 5: Categorical data encoded improperly for PCA
 - Real-World Project
