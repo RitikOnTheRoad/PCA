@@ -1,0 +1,33 @@
+✅ PCA Challenge #2 – Summary of Learnings
+🎯 Goal:
+Reduce the dimensionality of employee productivity data using PCA and evaluate if PCA-transformed features can be used for regression modeling.
+
+🔍 Key Learnings
+1. Scaling Matters
+Applying PCA without scaling caused features with large numerical ranges (like daily_tasks_completed) to dominate the principal components.
+
+After Standard Scaling, the variance was distributed more evenly, revealing subtler patterns.
+
+2. Low Variance Explained
+Even after scaling, no single principal component explained a dominant amount of variance (PC1: ~17%, PC2: ~15%).
+
+This indicated that the dataset did not have strong linear correlations among features.
+
+PCA was not very effective for compression in this case — many components were needed to explain most of the variance.
+
+3. Regression After PCA Was Weak
+Regression on the PCA-transformed features performed poorly:
+
+R² dropped sharply compared to the original feature set.
+
+This happened because the transformation prioritized variance, not necessarily predictive power of the target (performance_rating).
+
+4. Takeaway: PCA ≠ Always Useful for Prediction
+PCA is best when features are highly correlated or redundant.
+
+If features are already fairly independent and informative, PCA might hurt predictive modeling.
+
+Always compare performance before and after PCA, and check the explained variance ratio.
+
+🧠 Insight
+PCA is a powerful tool for reducing noise and redundancy, but it’s not a silver bullet. For datasets with low multicollinearity and well-distributed information, dimensionality reduction might oversimplify and reduce model accuracy.
