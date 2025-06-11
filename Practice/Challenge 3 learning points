@@ -1,0 +1,45 @@
+📚 Learning Summary: Tackling Multicollinearity with PCA + Regression
+🧠 Key Concepts Explored
+Multicollinearity in Regression
+
+Identified strong linear relationships between features (correlation = 1)
+
+Observed misleadingly high R² and low p-values, despite unstable underlying model
+
+Recognized that multicollinearity inflates variance and distorts coefficient interpretation
+
+Standardization & Covariance
+
+Standardized features before applying PCA to ensure equal contribution
+
+Verified that covariance of standardized features equals correlation
+
+Principal Component Analysis (PCA)
+
+Applied PCA to decorrelate features and reduce dimensionality
+
+Found that first 2 principal components explained ~83% of the total variance
+
+Confirmed that PCA-transformed features are uncorrelated but not standardized
+
+Analyzed component loadings to understand which original features influence each PC
+
+Regression on Principal Components (PCR)
+
+Trained regression on top principal components
+
+Achieved high R² on test set, indicating strong generalization
+
+Observed that using uncorrelated components stabilized the model and improved reliability
+
+✅ Outcomes
+Transformed a multicollinear dataset into a robust, interpretable model
+
+Preserved predictive performance while reducing redundancy
+
+Gained deeper understanding of when high R² is deceptive
+
+Solidified knowledge of PCA as a tool not just for dimensionality reduction, but also for modeling clarity and stability
+
+💡 Reflections
+"High R² isn’t always a green flag — it could be your model yelling for help under multicollinearity. PCA helped me listen." 🔍
