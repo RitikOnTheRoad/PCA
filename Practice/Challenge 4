@@ -1,1 +1,57 @@
 
+🧠 PCA Challenge #4: Reducing Redundancy in Clinical Diabetes Data
+📌 Context – You’re the Analyst
+You’ve recently joined a clinical research team as a Healthcare Data Analyst. The team is working with data collected from a long-term diabetes study involving female patients. The research lead drops a new task in your inbox:
+
+📄 Problem Statement
+“Hey Ritik — we’re trying to understand the underlying patterns in our diabetes dataset. The data contains various medical measurements such as glucose levels, blood pressure, insulin, BMI, and more. I suspect some of these features are redundant or highly correlated, which might be affecting our modeling efforts.”
+
+“Can you use PCA to reduce dimensionality, visualize the patient space, and then attempt a classification of diabetes presence using the principal components? Also compare how well the model performs using the original features versus the reduced components.”
+
+🧾 Dataset Overview
+You receive a dataset with clinical information for 768 patients, each row representing a single individual. The columns are:
+
+Feature	Description
+Pregnancies	Number of pregnancies
+Glucose	Plasma glucose concentration (mg/dL)
+BloodPressure	Diastolic blood pressure (mm Hg)
+SkinThickness	Triceps skinfold thickness (mm)
+Insulin	2-hour serum insulin (mu U/ml)
+BMI	Body mass index (weight in kg/(height in m)^2)
+DiabetesPedigreeFunction	A function that scores likelihood of diabetes based on family history
+Age	Age in years
+Outcome	Class variable (0 = non-diabetic, 1 = diabetic)
+
+📁 Download the dataset: diabetes_clinical_data.csv
+
+🎯 Your Tasks
+Perform EDA to understand distributions and relationships among features.
+
+Standardize the data (excluding Outcome) and run PCA.
+
+Examine the explained variance ratio to determine how many components to retain.
+
+Interpret the top components using the feature loadings (eigenvectors).
+
+Visualize the 2D projection of the data using the top principal components.
+
+Build a logistic regression model using the top principal components to classify diabetic vs. non-diabetic patients.
+
+Compare performance with a model trained on the original features.
+
+Provide insights on redundancy, interpretability, and dimensionality reduction.
+
+🕵️ Hidden Insight
+This challenge mirrors the complexities of working with clinical health data — where variables often overlap in the information they contain. Your job is to uncover latent health patterns while preserving predictive power and interpretability.
+
+✅ Deliverables
+Scree plot and cumulative explained variance curve
+
+PCA loadings matrix with interpretation
+
+Logistic regression results (on original vs. PCA-reduced features)
+
+Classification metrics (accuracy, confusion matrix, etc.)
+
+Final report explaining your choices, findings, and recommendations
+
